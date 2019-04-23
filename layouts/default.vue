@@ -1,15 +1,13 @@
 <template>
-  <a-locale-provider :locale='locale'>
+  <layout>
     <nuxt/>
-  </a-locale-provider>
+  </layout>
 </template>
 
 <script>
   export default {
-    computed: {
-      locale() {
-        return this.$i18n.messages[this.$i18n.locale]
-      }
+    data() {
+      return {}
     }
   }
 </script>

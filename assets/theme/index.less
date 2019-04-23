@@ -1,0 +1,194 @@
+@primary-color: #ed1ce2;
+@content-height-height: 75px;
+@content-footer-height: 50px;
+@top-height: 50px;
+@btn-bar-width: 50px;
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: calc(100vh - @top-height - @content-footer-height - @content-height-height);
+}
+
+.full-screen .top {
+  height: @top-height;
+}
+
+.full-screen .content {
+  height: calc(100vh - @top-height);
+}
+
+.btn {
+  min-width: @btn-bar-width;
+  min-height: 100%;
+}
+
+.nav-menu .btn, .nav-menu .btn-space {
+  min-width: @btn-bar-width;
+  min-height: @btn-bar-width;
+}
+
+.nav-menu .btn i {
+  width: @btn-bar-width;
+}
+
+.nav-menu .layout .pull.pull-center {
+  display: block;
+}
+
+
+.content .ant-layout-footer .layout {
+  height: @content-footer-height;
+}
+
+.content .pull-center .ant-layout-header {
+  height: @content-height-height;
+}
+
+.overflow {
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.layout {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.layout .ant-layout-header, .layout .ant-layout-footer {
+  width: 100%;
+  padding: 0 0;
+  margin: 0 0;
+}
+
+.full-screen {
+  width: 100vw;
+  height: 100vh;
+}
+
+.left-side {
+  display: none;
+}
+
+.left-side.active {
+  display: flex;
+}
+
+.nav-menu-popover {
+  left: -10px !important;
+}
+
+.nav-menu-popover > .ant-popover-content > .ant-popover-arrow {
+  top: 20px;
+  left: 56px;
+}
+
+.nav-menu-popover .ant-popover-inner {
+  border-radius: 0px;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.nav-menu-popover .ant-popover-inner .ant-popover-title {
+  min-height: 50px;
+  margin: 0;
+  padding: 10px;
+  font-size: large;
+  border-bottom: 0px solid #454545;
+}
+
+.nav-menu-popover .ant-popover-inner .ant-popover-inner-content {
+  padding: 0;
+}
+
+.nav-menu-popover .ant-popover-inner .ant-popover-inner-content .btn {
+  padding: 0;
+}
+
+.nav-menu-popover .ant-popover-inner .ant-popover-title {
+  padding: 0;
+}
+
+.nav-menu-popover .ant-popover-inner .btn .layout .pull {
+  min-height: 50px;
+}
+
+.nav-menu-popover .ant-popover-inner .ant-popover-inner-content .btn .layout,
+.nav-menu-popover .ant-popover-inner .ant-popover-title .btn .layout {
+  color: #454545;
+  padding: 0 0px;
+}
+
+.nav-menu-popover .ant-popover-inner .ant-popover-inner-content .btn .layout:hover,
+.nav-menu-popover .ant-popover-inner .ant-popover-title .btn .layout:hover {
+  color: orangered;
+}
+
+.nav-menu-popover .ant-popover-inner .ant-popover-title .btn {
+  background-color: orange;
+}
+
+.nav-menu-popover .ant-popover-inner .ant-popover-title .btn .layout .pull.pull-left {
+  background-color: rgba(28, 255, 27, 0.34);
+}
+
+.nav-menu-popover .ant-popover-inner .ant-popover-title .btn .layout .pull.pull-center,
+.nav-menu-popover .ant-popover-inner .ant-popover-inner-content .btn .layout .pull.pull-center {
+  padding: 0 15px;
+  min-width: 150px;
+  background-color: #ffffff;
+  justify-content: left;
+}
+
+.nav-menu-popover .ant-popover-inner .ant-popover-inner-content .btn > .layout > .pull.pull-left {
+  display: flex;
+  background-color: #ffffff00;
+}
+
+.nav-menu-popover .ant-popover-inner .ant-popover-inner-content .btn > .layout > .pull.pull-center {
+  border-top: 1px solid #454545;
+}
+
+.collapsed .btn .title, .nav-menu .collapsed .arrow {
+  display: none;
+}
+
+.ant-collapse > .ant-collapse-item > .ant-collapse-header {
+  padding: 0;
+}
+
+.ant-collapse-borderless > .ant-collapse-item {
+  border-bottom: 0px solid #d9d9d9;
+}
+
+.collapsed > .ant-collapse > .ant-collapse-item > .ant-collapse-header .arrow {
+  display: none !important;
+}
+
+.ant-collapse > .ant-collapse-item > .ant-collapse-header .arrow {
+  line-height: 50px;
+  right: 16px;
+  left: unset;
+  color: #F5F5F5;
+}
+
+.ant-collapse-borderless > .ant-collapse-item > .ant-collapse-content > .ant-collapse-content-box {
+  padding-top: 0px;
+}
+
+.ant-collapse-content > .ant-collapse-content-box {
+  padding: 0px;
+}
+
+.ant-collapse-content-box, .ant-collapse-content-box .btn, .ant-collapse-content-box .btn {
+  background-color: rgba(17, 16, 29);
+}
+
+@media only screen and (max-device-width: 1080px) {
+
+}

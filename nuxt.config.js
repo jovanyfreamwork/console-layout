@@ -27,11 +27,11 @@ export default {
   ** Global CSS
   */
   css: [
-    '@/assets/index.less'
+    '@/assets/index.css', '@/assets/index.less'
   ],
 
   router: {
-    middleware: ['i18n']
+    middleware: ['i18n', 'theme']
   },
 
   /*
